@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "dotenv -- turbo run dev",
+    "lint": "turbo run lint -- --fix",
+    "prepare": "husky install",
+    "compile": "dotenv -- turbo run compile",
+    "storybook": "dotenv -- turbo run storybook",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "config": "workspace:*",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.48.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "name": "next-graphql-starter"
+}
