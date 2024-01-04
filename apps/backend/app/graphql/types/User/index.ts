@@ -4,9 +4,9 @@ import GQLSchema from "./model";
 const name = "User";
 
 const User = {
-  name,
-  GQLSchema,
-  GQLResolvers,
+    name,
+    GQLSchema,
+    GQLResolvers,
 };
 
 export default User;

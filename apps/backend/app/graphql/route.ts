@@ -23,6 +23,7 @@ const server = new ApolloServer({
   introspection: true,
 });
 const handler = startServerAndCreateNextHandler(server, {
+  // @ts-expect-error "The context requires async function"
   context,
 });
 
